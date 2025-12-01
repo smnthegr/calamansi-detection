@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detection Result - Calamansi Disease Detection</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .canvas-container {
+      position: relative;
+      display: inline-block;
+      max-width: 100%;
+    }
+    
+    #resultCanvas {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+    }
+    
+    .detection-info {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #f0f8ff;
+      border-radius: 5px;
+      font-size: 0.9em;
+    }
+    
+    .verification-badge {
+      display: none;
+      background-color: #4CAF50;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 15px;
+      font-size: 0.85em;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo-container">
+    <div class="logo-img">
+      <img src="logo.png" alt="Calamansi Logo">
+    </div>
+    <div class="logo-text"><Strong>CALI AI</Strong></div>
+  </div>
+</div>
+
+<div class="main-container">
+  <div class="right-section">
+    <div class="upload-card">
+      <div class="result-card show">
+        <div class="result-image">
+          <div class="canvas-container">
+            <canvas id="resultCanvas"></canvas>
+          </div>
+          <div class="detection-info">
+            <strong>Detection Area:</strong> Highlighted in green box with confidence percentage
+          </div>
+        </div>
+        <div class="result-details">
+          <span class="verification-badge" id="verificationBadge">✓ Verified as Calamansi</span>
+          <h2>Detection Results:</h2>
+          <div class="result-label">
+            <strong>Disease Detected:</strong> <span id="diseaseName">-</span>
+          </div>
+          <div class="result-confidence">
+            <strong>Confidence Level:</strong> <span id="confidence">-</span>
+          </div>
+          <div class="result-description">
+            <strong>Description & Treatment:</strong> <span id="description">-</span>
+          </div>
+        </div>
+        <a href="index.html"><button class="back-btn">Analyze Another Image</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- External JavaScript file -->
+<script src="result.js"></script>
+
+</body>
+</html>
