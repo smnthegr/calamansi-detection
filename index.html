@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calamansi Disease Detection System</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+
+<div class="header">
+  <div class="logo-container">
+    <div class="logo-img">
+      <img src="logo.png" alt="Calamansi Logo">
+    </div>
+    <div class="logo-text"><strong>CALI AI</strong></div>
+  </div>  
+</div>
+
+<div class="main-container">
+  <div class="right-section">
+    <div class="upload-card">
+      <form id="uploadForm">
+        <div class="upload-box">
+          <input type="file" id="fileInput" name="image" accept="image/*" required>
+          <label for="fileInput" class="upload-label">
+            <div class="upload-btn">Upload Image</div>
+            <p class="upload-info">Maximum size: 10MB <br> Image Format: jpg or png 
+              <br> <em>Note: For best result, use a clear photo between 1-5MB</em> </p>
+          </label>
+        </div>
+
+        <div class="image-preview" id="imagePreview">
+          <img id="previewImg" src="" alt="Preview">
+        </div>
+
+        <button class="btn" type="submit" id="detectBtn" disabled>Detect Disease</button>
+      </form>
+      <div class="description-container">
+        <h1 class="description-title">
+            <span class="highlight">Cali AI:</span> A Calamansi Disease Detector System
+        </h1>
+        <div class="description-card">
+          <div class="description-content">
+            <p>It is a smart and easy-to-use system designed to help farmers take care of their calamansi plants.
+              Using advanced image analysis and intelligent algorithms, it can quickly identify and classify common plant diseases. 
+              With Cali AI, farmers can spot problems early, reduce crop losses, and keep their calamansi plants healthy.
+              It's like having a helpful assistant in the field, guiding you to take timely actions for a better harvest</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
